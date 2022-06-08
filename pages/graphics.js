@@ -45,7 +45,7 @@ export default function Graphics() {
                                     </div>
                                 </div>
                                 <div className="grid-text-box bg_dark">
-                                    <h3>products that work</h3>
+                                    <h3>Hier komt de titel</h3>
                                     <p>Hier komt de omschrijving</p>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ export default function Graphics() {
                                 <div className="grid-overlay">
                                     <div className="arrow-box"><BiChevronRight /></div>
                                     <div className="grid-text-box-inside">
-                                        <h3>Hier komt de titel 2</h3>
+                                        <h3>Hier komt de titel</h3>
                                         <p>Hier komt de omschrijving</p>
                                     </div>
                                 </div>
