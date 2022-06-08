@@ -1,0 +1,83 @@
+$base-color: #c6538c;
+$border-dark: darken($base-color, 15%);
+
+$red:rgb(235, 0, 51);
+$blue:rgb(89, 104, 241);
+$green:rgb(0, 241, 201);
+$green-light: #a9dbd3;
+$orange: rgb(235, 114, 0);
+$white: #fff;
+$black: #111;
+$purple: rgb(145 101 197);
+$purple_dark: #4e58bb;
+$bg_pink: #d74f84;
+$bg_blue_light: #2ab5d3;
+
+
+$primary-color: rgb(235, 0, 51);
+$primary-color-dark: darken($primary-color, 15%);
+
+$dark-color: #000c18;
+$dark-color-darker: darken($dark-color, 15%);
+$dark-color-lighter: lighten($dark-color, 25%);
+
+
+$border-color: #fff;
+
+/* //////////////       Navvbar menu 	////////////// */ 
+$nav-color: #fff;
+$nav-color-hover: $blue;
+
+$nav-color-light: rgb(255, 255, 255);
+$nav-color-light-hover: $green;
+
+$nav-hamburger: rgb(235, 0, 51);
+$nav-hamburger-hover: $green;
+
+$header-fixed: $blue;
+ 
+$bg-navbar-grad-1: rgb(0, 12, 24);
+$bg-navbar-grad-2: linear-gradient(90deg, rgba(0, 12, 24, 1) 0%, rgba(0, 12, 24, 1) 50%, rgba(0, 12, 24, 1) 100%);
+
+$bg-navbar-grad-1-hover: rgb(9, 9, 121);
+$bg-navbar-grad-2-hover: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(103, 52, 108, 1) 50%, rgba(175, 21, 60, 1) 100%);
+
+
+/* //////////////       buttons 	////////////// */ 
+$button-padding: 24px;
+$button-text-color: #222; // rgb(255, 255, 255);
+$button-text-color-hover: rgb(255, 255, 255);
+
+$button-bg-color: #5000f1; //  rgb(62, 79, 231);
+$button-bg-color-hover: #00f1c9; // $dark-color-lighter;
+$button-bg-color-red: rgb(235, 0, 51);
+
+$button-border-radius:2em;
+
+
+.gradient_1 { 
+	background: linear-gradient(-45deg, #ee7752, #e7cd3c, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite; 
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+// .gradient_body { 
+// 	background: rgb(9,9,121);
+// 	background: -moz-linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(103,52,108,1) 50%, rgba(175,21,60,1) 100%);
+// 	background: -webkit-linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(103,52,108,1) 50%, rgba(175,21,60,1) 100%);
+// 	background: linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(103,52,108,1) 50%, rgba(175,21,60,1) 100%);
+// 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979",endColorstr="#af153c",GradientType=1);
+// 	background-attachment: fixed;
+// }

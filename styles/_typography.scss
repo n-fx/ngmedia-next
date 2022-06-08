@@ -1,0 +1,82 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+}
+
+h1 {
+    line-height: 1.08;
+    font-size: 5.6rem;
+    font-weight: 800;
+    grid-column-start: 2;
+    margin-bottom: 2.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+    line-height: 1.13;
+}
+
+h3 {
+    font-size: 2.7rem;
+    line-height: 1.33;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+p.lead {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+}
+
+small,
+.small {
+    font-size: 0.85em;
+}
+
+.subtitle {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7em;
+    line-height: 2.8em;
+    display: block;
+}
+
+.text-red {
+    color: $red;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+.text-purple {
+    color: $purple;
+}
+
+// .text-gradient {
+//     background: linear-gradient(to right,
+//             rgb(0, 241, 201),
+//             rgb(89, 104, 241));
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     background-position: left;
+// }

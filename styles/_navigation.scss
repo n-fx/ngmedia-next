@@ -1,0 +1,266 @@
+.site-header {
+  background-color: $dark-color;
+  color: #fff;
+  z-index: 999 !important;
+  width: 100%;
+  padding: 2em 0em 2em 0em;
+  transition: 0.5s ease-in-out;
+  position: fixed;
+}
+
+.header-fixed {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+.header-fixed .site-header {
+  background-color: $header-fixed;
+
+  padding: 1em 0em 1em 0em;
+  color: #333;
+}
+
+.site-logo {
+  width: 160px;
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+  left: 24px;
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.site-logo a {
+  text-decoration: none;
+  color: $nav-color;
+}
+
+.site-logo a:hover {
+  text-decoration: none;
+  color: $nav-color-light-hover;
+}
+
+.menu-icon {
+  width: 48px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+  margin-top: 20px;
+  float: right;
+  right: 10px;
+  z-index: 99;
+}
+
+.menu-icon span {
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  background: $nav-hamburger;
+  right: 24px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: 0.4s ease-out;
+}
+
+.menu-icon:after,
+.menu-icon:before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 2px;
+  background: $nav-hamburger;
+  right: 24px;
+  transition: 0.4s ease-out;
+}
+
+.menu-icon:hover span {
+  width: 29px;
+  background: $nav-hamburger-hover;
+}
+
+.menu-icon:hover::before,
+.menu-icon:hover::after {
+  width: 45px;
+  background: $nav-hamburger-hover;
+}
+
+.menu-icon:after {
+  bottom: 0px;
+}
+
+nav {
+  display: block;
+  float: right;
+  right: 140px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  color: $nav-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.4s ease-out;
+}
+
+nav ul li a:hover {
+  color: $nav-color-hover;
+  text-decoration: none;
+}
+
+.header-fixed .site-header nav ul li a {
+  color: $nav-color-light;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-fixed .site-header nav ul li a:hover {
+  color: $nav-color-light-hover;
+  text-decoration: none;
+}
+
+.menuNav {
+  display: block;
+  width: 0;
+  height: 100vh;
+  background-color: #130b33;
+  background: rgb(19, 11, 51);
+  background: -moz-linear-gradient(90deg, rgba(19, 11, 51, 1) 0%, rgba(0, 12, 24, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(19, 11, 51, 1) 0%, rgba(0, 12, 24, 1) 100%);
+  background: linear-gradient(90deg, rgba(19, 11, 51, 1) 0%, rgba(0, 12, 24, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#130b33",endColorstr="#000c18",GradientType=1);
+  position: fixed;
+  top: 0px;
+  right: -800px;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  z-index: 999;
+}
+
+.menuNav.showMenu {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+}
+
+.navmobile {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.navmobile ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.menuNav.showMenu .navmobile ul {
+  opacity: 1;
+}
+
+.navmobile ul li {
+  padding: 20px;
+  width: 100%;
+  font-size: 1.4em;
+}
+
+.navmobile ul li a {
+  color: $nav-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.4s ease-out;
+}
+
+.navmobile ul li a:hover {
+  color: $nav-hamburger-hover;
+  text-decoration: none;
+}
+
+.menu-icon-close {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 1;
+  top: 31px;
+  right: 53px;
+  z-index: 99;
+  padding: 0px;
+  line-height: 50px;
+  font-size: 68px;
+  color: rgb(0, 241, 201);
+}
+
+/* /////////////// Logo Ngmedia /////////////// */
+
+#ngmedia {
+  height: 320px;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: -150px;
+  opacity: 0.05;
+  margin-left: -960px;
+  z-index: 0;
+  display: none;
+}
+
+.menuNav.showMenu #ngmedia {
+  display: block;
+}
+
+#ngmedia text {
+  fill: transparent;
+  stroke-width: 12px;
+  stroke: rgb(192, 192, 192);
+  stroke-dasharray: 850;
+  stroke-dashoffset: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 20vw;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  animation: ngmedia 25s linear infinite;
+}
+
+@keyframes ngmedia {
+  0% {
+    stroke-dashoffset: 100;
+    fill: transparent;
+  }
+
+  50% {
+    stroke-dashoffset: 850;
+  }
+
+  100% {
+    stroke-dashoffset: 1700;
+    fill: transparent;
+  }
+}

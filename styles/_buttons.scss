@@ -1,0 +1,179 @@
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+    background: $bcolor;
+    -webkit-mask: url($url);
+    mask: url($url);
+    -webkit-mask-size: $x1 $y1;
+    mask-size: $x1 $y1;
+    border: $bor;
+    color: $col;
+}
+
+.button-primary {
+    width: 238px;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: $button-bg-color-hover;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0px;
+    border-radius: $button-border-radius;
+    border: 0px solid #fff;
+
+    button {
+        width: 240px;
+        height: 100%;
+        font-size: 0.9em;
+        padding: $button-padding;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: $button-text-color;
+        border-radius: $button-border-radius;
+
+        @include button(
+            $button-bg-color,
+            "../public/images/nature-sprite.png",
+            2300%,
+            100%,
+            none,
+            $button-text-color-hover
+        );
+        cursor: pointer;
+        -webkit-animation: ani2 0.3s steps(22) forwards;
+        animation: ani2 0.3s steps(22) forwards;
+
+        &:hover {
+            -webkit-animation: ani 0.3s steps(22) forwards;
+            animation: ani 0.3s steps(22) forwards;
+        }
+    }
+}
+
+.button-primary span {
+    padding-left: 8px;
+    transition: 0.6s ease-in-out;
+}
+
+.button-primary:hover span {
+    padding-left: 16px;
+}
+
+.mas {
+    position: absolute;
+    color: $button-text-color;
+    text-align: center;
+    width: 240px;
+    padding: $button-padding;
+    font-weight: 800;
+    font-size: 0.9em;
+    overflow: hidden;
+    text-transform: uppercase;
+    border-radius: $button-border-radius;
+}
+
+@-webkit-keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@-webkit-keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
+
+@keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
+
+.button-scroll {
+    transition: 0.5s;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 1em 1.2em 1em 1.2em;
+    border-radius: 100%;
+    background-color: $button-bg-color;
+    color: $button-text-color-hover;
+}
+
+.button-scroll:hover {
+    background-color: $button-bg-color-hover;
+    color: $button-text-color;
+}
+
+//  a {
+//      color: #00ff95;
+//  }
+
+//  .button-container-3 {
+//      position: relative;
+//      width: 100px;
+//      height: 50px;
+//      margin-left: auto;
+//      margin-right: auto;
+//      margin-top: 8vh;
+//      overflow: hidden;
+//      border: 1px solid #000;
+//      font-family: 'Lato', sans-serif;
+//      font-weight: 300;
+//      transition: 0.5s;
+//      letter-spacing: 1px;
+//      border-radius: 8px;
+
+//      button {
+//          width: 101%;
+//          height: 100%;
+//          font-family: 'Lato', sans-serif;
+//          font-weight: 300;
+//          font-size: 11px;
+//          letter-spacing: 1px;
+//          font-weight: bold;
+
+//          @include button(#000, "https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png",
+//              7100%,
+//              100%,
+//              none,
+//              #fff);
+//          cursor: pointer;
+//          -webkit-animation: ani2 0.7s steps(70) forwards;
+//          animation: ani2 0.7s steps(70) forwards;
+
+//          &:hover {
+//              -webkit-animation: ani 0.7s steps(70) forwards;
+//              animation: ani 0.7s steps(70) forwards;
+//          }
+//      }
+//  }
