@@ -11,7 +11,7 @@ export default function Website_01() {
                 <div className="row g-5">
                     <div className="p-4 col-12 col-md-8 m-auto col-lg-5 text-white">
                         <span className="subtitle text-red">Delizioso Pizza's</span>
-                        <h3 className="text-gradient">Heroca website</h3>
+                        <h3 className="text-gradient">Horeca website</h3>
                         <p className="hero-text">Demo website voor de horeca, denk aan een restaurant of cafe.</p>
                         <div className="button-primary">
                             <Link href="https://www.ngmedia.nl/foodsite">
