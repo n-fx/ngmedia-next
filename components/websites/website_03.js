@@ -13,8 +13,8 @@ export default function Website_01() {
                         <h3 className="text-gradient">Blog website</h3>
                         <p className="hero-text">Een leuke blog website met als onderwerp een fictief koffiemerk.</p>
                         <div className="button-primary">
-                            <Link href="coffeecraft.vercel.app">
-                                <a target="_blank">
+                            <Link href="https://coffeecraft.vercel.app/" aria-label="coffeecraft.vercel.app">
+                                <a target="_blank" aria-label="coffeecraft.vercel.app" >
                                     <div className="mas">Bezoek de website<span><FaArrowRight /></span></div>
                                     <button type="button" name="Hover">
                                         Bezoek de website<span><FaArrowRight /></span>
@@ -47,8 +47,8 @@ export default function Website_01() {
                                         </div>
                                     </div>
                                     <div className="img-web" style={{ backgroundImage: "url('/images/websites/coffee_blog.png')" }}></div>
-                                    <Link href="coffeecraft.vercel.app">
-                                        <a target="_blank" className='vieuw_site inner-element'>Bezoek de website<span><FaArrowRight /></span></a>
+                                    <Link href="https://coffeecraft.vercel.app/" aria-label="coffeecraft.vercel.app">
+                                        <a target="_blank" aria-label="coffeecraft.vercel.app" className='vieuw_site inner-element'>Bezoek de website<span><FaArrowRight /></span></a>
                                     </Link>
                                 </div>
                             </div>
