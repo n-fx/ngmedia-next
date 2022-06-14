@@ -18,23 +18,10 @@ export default function Logo() {
             <div className="container pb-0">
                <div className="row">
                   <div className="col-lg-6 px-3">
-
                      <h1>Logo <span className='text-red'>Design</span></h1>
                      <p>Een logo laten ontwerpen kan heel snel en eenvoudig zijn. Maar soms ook juist niet en wil je net dat ene beetje meer. Je wil een bepaald gevoel bij je klant opwekken. Dit kan zijn dat je kies voor een zakelijke uitstraling of juist voor een wat losse uitstraling. In een oog opslag moet jouw klant of publiek kunnen zien waar jij voor staat en welke dienst jij levert.
                      </p>
-
                      <p>Ik denk graag met je mee, ik stel je de juiste vragen en samen komen we tot een eindresultaat waar we samen tevreden over zijn. Ik komt met voorbeelden en opzetjes. Ik zorg er uit eindelijk ook voor dat jouw logo geschikt is voor meerdere doeleinden, denk bijvoorbeeld aan je website maar ook briefpapier en social media. Ik zorg ervoor dat jouw logo in kleur wordt aangeleverd maar ook op een lighte en donkere achtergrond goed tot z'n recht komt.</p>
-
-                     <div className="button-primary ms-0">
-                        <Link href="/cv">
-                           <a>
-                              <span className="mas">Bekijk Mijn CV</span>
-                              <button type="button" name="Hover">
-                                 Bekijk Mijn CV
-                              </button>
-                           </a>
-                        </Link>
-                     </div>
                   </div>
 
                   <div className="col-lg-6">
