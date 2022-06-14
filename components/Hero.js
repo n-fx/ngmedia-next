@@ -7,7 +7,7 @@ export default function Hero() {
             <div className="container">
                 <div className="row">
                     <div className="col text-center hero-in">
-                        <h1>Ik maak <span>digitale</span> content voor jouw!</h1>
+                        <h1>Ik maak <span>digitale</span> content voor jou!</h1>
                         <p className="hero-text">Van ontwerp tot webdesign, van video animaties tot audio producties.</p>
  
                         <div className="button-primary m-auto">
