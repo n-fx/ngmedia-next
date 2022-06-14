@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>NGmedia - Digitale content voor jouw!</title>
+        <title>NGmedia - Digitale content voor jou!</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="NGmedia portfolio website van Ngmedia. Ik maak digitale content voor jouw! Van ontwerp tot webdesign, van video tot audio producties." />
       </Head>
